@@ -1,0 +1,143 @@
+/* General
+------------------------------------------------------------- */
+.qg-body{
+    background:#06070D;
+    color:rgb(242,242,242);
+    font-family:'Roboto','sans-serif';
+    margin:0;
+    padding:0;     
+}
+
+/* Header
+------------------------------------------------------------- */
+header{
+    margin:auto;   
+    text-align:center; 
+}
+.main-title{
+    font-size:35px;
+    font-weight:500;
+}
+.main-title-second{
+    color:#00e59b;
+}
+.subtitle{
+    font-weight: 300;
+}
+.subtitle,.menu{
+    letter-spacing: 1px;
+}
+
+/* Menu */
+.menu{
+    display:flex;
+    justify-content:center;
+    margin-top: 30px;    
+}
+.menu-list{
+    background-color: rgba(22,26,31,.95);
+    box-shadow: -1px 3px 3px 0px rgba(22,26,31,.7);
+    border-radius:8px;
+    margin: 0 30px;    
+    padding:10px;    
+}
+.menu-list:hover{
+    background-color:#1F2327;
+}
+.menu-item{
+    padding:20px;    
+}
+.menu-title{
+    font-size:17px;
+    font-weight: 300;    
+    padding:10px;
+}
+.menu-title-second{
+    font-weight:400;
+}
+.menu-text{
+    border-top: 2px solid #4D4D52;
+    border-radius:10px;
+    box-shadow: -1px 3px 3px 0px rgba(22,26,31,.7);    
+    color:rgb(160,160,168);
+    min-height:30px;    
+}
+.radio{
+    cursor: pointer;    
+}
+.radio:checked + .radio-label{
+    color:#00e59b;
+}
+.quote-number{
+    border:none;
+    border-radius: 5px;
+    outline: none;
+    padding: 8px;
+}
+
+/* Buttons */
+.btn-group{
+    display: flex;
+    justify-content: center;
+}
+.btn{    
+    background-color:#00e59b;
+    background-image: linear-gradient(114deg, rgb(76, 221, 189), rgb(6, 242, 134));
+    border: none;
+    border-radius:10px;
+    color:#06070d;
+    cursor:pointer;
+    display:block;
+    font-size:17px;
+    font-weight: 600;     
+    margin:30px; 
+    outline:none;     
+    padding:12px 40px;
+}
+.btn:hover{
+    background-color: rgb(6, 242, 134);
+    background-image:linear-gradient(114deg, rgb(76, 221, 189) 60%, rgb(6, 242, 134) 40%);        
+}
+.btn-exit{
+    display:none;
+}
+
+/* Quotes
+------------------------------------------------------------- */
+.quote{    
+    background-color:rgb(34,39,43);
+    border-radius:8px ;
+    display:none;
+    font-size:18px;
+    font-weight: 300;
+    letter-spacing: 1.5px;  
+    margin:auto;  
+    margin-bottom:20px;
+    padding: 10px 40px;        
+    width:80%;
+}
+.quote span{
+    color:#F4580A;
+    font-size:35px;
+    font-weight:700;
+}
+.quote p{
+    margin:4px;
+}
+.show{
+    display:block;
+}
+
+/* Media queries
+------------------------------------------------------------- */
+@media screen and (max-width:767px){
+    .menu{
+        flex-direction: column;
+    }
+    .menu-list:nth-child(2){
+        margin-top:20px;        
+    }
+    .quote{
+        padding: 10px 20px;
+    }
+}
