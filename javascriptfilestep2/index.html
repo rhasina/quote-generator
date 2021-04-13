@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Quotation generator</title>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body class="qg-body">
+        <header id="header">
+            <h1 class="main-title">
+                <span class="main-title-second">
+                    Quotes
+                </span>
+                generator
+            </h1>
+            <p class="subtitle">Generate random quotes in one click</p>
+            <nav class="menu">
+                <div class="menu-list">
+                    <div class="menu-item  menu-title">Choose a<span class="menu-title-second"> category</span></div>
+                    <div class="menu-item menu-text">
+                        <input type="radio" name="category" value="Love" id="love" class="radio" checked> <label for="love" class="radio-label">Love quotes</label>
+                        <input type="radio" name="category" value="Motivation" id="motivation" class="radio"> <label for="motivation" class="radio-label">Motivational quotes</label>
+                    </div>
+                </div>
+                <div class="menu-list">
+                    <div class="menu-item  menu-title">Choose the <span class="menu-title-second">number of quote</span></div>
+                    <div class="menu-item  menu-text">
+                        <input type="number" name="quote_number" id="quote_number" class="quote-number" min="1" max="5" step="1" value="1">
+                    </div>
+                </div>                 
+            </nav>   
+            <div class="btn-group">
+                <button class=" btn" id="generate"> Generate</button>
+                <button class="btn btn-exit" id="exit"> Exit </button>
+            </div>            
+        </header>  
+        <section id="quote" class="quote">            
+        </section>
+        
+        <script src="./js/script.js"></script>
+    </body>
+</html>
